@@ -1,0 +1,609 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+body {
+    font-size: 20px;
+    color: #444444;
+    min-width: 1450px;
+    font-family: 'NanumSquareNeo';
+    line-height: 1.5;
+    /* font-family: 'Jalnan2-Regular';*/
+    /*font-family: 'NanumSquareNeoLight';
+font-family: 'NanumSquareNeo';
+font-family: 'NanumSquareNeoBold';
+font-family: 'NanumSquareNeoExtraBold';
+font-family: 'NanumSquareNeoHeavy';*/
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    /* 스크롤바의 너비 */
+}
+
+::-webkit-scrollbar-thumb {
+    height: 20%;
+    /* 스크롤바의 길이 */
+    background: #ff88a1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 225, 206, 0.1);
+    /*스크롤바 뒷 배경 색상*/
+}
+
+/*top*/
+#top {
+    background-color: #77e5df;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+.top_inner {
+    width: 1320px;
+    height: 45px;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_inner ul {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.top_inner ul.left_btn li {
+    padding: 15px 15px 15px 0;
+}
+
+.top_inner ul li {
+    padding: 15px 0;
+}
+
+.top_inner ul li.padding_right {
+    padding: 15px 15px 15px 0;
+}
+
+/*header*/
+#header {
+    position: fixed;
+    width: 100%;
+    top: 45px;
+    left: 0;
+    z-index: 50;
+    background-color: #fcf9f1;
+    box-shadow: 0px 3.5px 7px rgba(0, 0, 0, 0.05);
+}
+
+.header_inner {
+    width: 1320px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.header_inner>ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_inner>ul>li>a {
+    font-family: 'NanumSquareNeoHeavy';
+}
+
+#header:hover {
+    box-shadow: 0px 3.5px 3.5px rgba(0, 0, 0, 0.1);
+}
+
+.gnb {
+    display: flex;
+}
+
+.gnb>li {
+    font-weight: bold;
+    padding: 30px 40px;
+}
+
+.gnb>li {
+    position: relative;
+}
+
+.gnb>li:hover>a {
+    color: #ff88a1;
+    transition: all 0.3s;
+    border-bottom: 2px solid #ff88a1;
+}
+
+.gnb>li:nth-child(3):hover>a {
+    border: none;
+}
+
+.sub {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    display: none;
+    margin: 15px 0;
+}
+
+.sub li {
+    font-size: 18px;
+    color: #666;
+    font-weight: normal;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.sub li:hover a {
+    color: #ff88a1;
+    transition: all 0.3s;
+}
+
+.gnb {
+    position: relative;
+    display: flex;
+
+}
+
+.gnb>.sub_bg {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 200px;
+    width: 100%;
+    background-color: #fcf9f1;
+    opacity: 0.9;
+    border-radius: 0 0 50px 50px;
+    padding: 0;
+    border-bottom: 2px solid #ff88a1;
+    border-left: 2px solid #ff88a1;
+    border-right: 2px solid #ff88a1;
+}
+
+/*background*/
+#background {
+    background: url(../images/sub1_background_bg.jpg) no-repeat;
+    margin-top: 146px;
+    height: 1338px;
+}
+
+.background_inner {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.background_inner img {
+    margin-top: 103px;
+}
+
+.background_inner h6 {
+    margin: 87px;
+    font-size: 30px;
+    font-family: 'NanumSquareNeoExtraBold';
+}
+
+/*brandstory*/
+#brandstory {
+    background-color: #fcf9f1;
+    background-image: url(../images/sub1_brandstory_slogan_bg.png), url(../images/sub1_brandstory_oleolelife_bg.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 778px, right 1720px;
+}
+
+.brandstory_inner {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.brandstory_inner>p {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+
+.brandstory_flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.brandstory_text h1 {
+    padding-top: 67px;
+    padding-bottom: 15px;
+}
+
+.brandstory_text p {
+    padding-left: 47px;
+    line-height: 1.7;
+}
+
+.brandstory_text p span {
+    font-family: 'NanumSquareNeoExtraBold';
+}
+
+.blue_box {
+    padding-top: 74px;
+    padding-left: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    position: relative;
+}
+
+@keyframes up_and_down {
+    0% {
+        transform: translateY(5px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+.heart {
+    position: absolute;
+    top: 150px;
+    left: -120px;
+    animation: up_and_down 1.3s linear infinite;
+}
+
+.music {
+    position: absolute;
+    top: 260px;
+    left: -51px;
+    animation: up_and_down 1.3s linear infinite;
+}
+
+@keyframes left_right {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    40% {
+        transform: translate(-10px, 10px);
+    }
+
+    80% {
+        transform: translate(10px -10px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.pencil {
+    position: absolute;
+    top: 340px;
+    left: -120px;
+    animation: left_right 1.3s linear infinite;
+}
+
+.slogan_img {
+    text-align: right;
+    padding: 138px 0;
+}
+
+.olaeolae {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 180px;
+    padding-bottom: 130px;
+    position: relative;
+}
+
+@keyframes walk {
+    0% {
+        left: 0;
+    }
+
+    48% {
+        left: 900px;
+        transform: rotateY(0deg);
+    }
+
+    49% {
+        left: 900px;
+        transform: rotateY(180deg);
+    }
+
+    100% {
+        left: 0;
+        transform: rotateY(180deg);
+
+    }
+}
+
+.walk {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 200px;
+    animation: walk 12s linear infinite;
+}
+
+.olae_text {
+    text-align: right;
+}
+
+.olae_text h3 {
+    padding-bottom: 45px;
+}
+
+.olae_text p {
+    padding-bottom: 130px;
+}
+
+.brandidentity {
+    position: relative;
+}
+
+.brandidentity>h4 {
+    padding-bottom: 45px;
+}
+
+.brandidentity_flex {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 170px;
+}
+
+.color {
+    position: absolute;
+    bottom: 136px;
+    right: 405px;
+}
+
+.rainbow {
+    position: absolute;
+    top: 600px;
+    right: -150px;
+    animation: left_right 1.3s linear infinite;
+}
+
+.olaeolae {
+    position: relative;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(-5deg);
+    }
+
+}
+
+.olae_title {
+    position: absolute;
+    top: 300px;
+    left: -200px;
+    animation: shake 1.5s linear infinite;
+}
+
+.clover {
+    position: absolute;
+    bottom: -30px;
+    right: -145px;
+    animation: up_and_down 1.3s linear infinite;
+}
+
+/*video_banner*/
+.video_banner {
+    background-color: #ffe0e7;
+    margin-bottom: 115px 0;
+}
+
+.video_banner_inner {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.video_banner_inner>iframe {
+    padding-top: 115px;
+    padding-bottom: 50px;
+}
+
+.video_banner_inner h1 {
+    font-family: 'Jalnan2-Regular';
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+
+.video_banner_inner p {
+    line-height: 2;
+    padding-bottom: 120px;
+    font-size: 30px;
+}
+
+#misson {
+    background-color: #fcf9f1;
+    padding-top: 100px;
+}
+
+.misson_inner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 516px;
+    background-image: url(../images/sub1_mission_bg.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.misson_inner p {
+    color: white;
+}
+
+.misson_inner p span {
+    font-size: 40px;
+    font-family: 'NanumSquareNeoExtraBold';
+}
+
+/*core_value*/
+#core_value {
+    background-color: #fcf9f1;
+}
+
+.core_value_inner {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.core_value_inner>h1 {
+    text-align: center;
+    padding-top: 125px;
+    padding-bottom: 85px;
+}
+
+.core_value_inner .core_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+#slide {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 15px 0;
+    background-color: #fffcdd;
+}
+
+/*width를 본인에 맞게 수정하여 사용하세요 ! --아래 3개*/
+.slide_inner {
+    width: 3600px;
+    /*ul길이의 두배!*/
+    display: flex;
+    animation: rotate 10s linear infinite;
+}
+
+.slide_inner ul {
+    display: flex;
+    align-items: center;
+    width: 1800px;
+    /*li크기를 전부합한것보다 더 여유있게.*/
+    justify-content: space-around;
+}
+
+.slide_inner ul li {
+    width: 300px;
+}
+
+.misson_inner p {
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+@keyframes rotate {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -1800px;
+        /*slide_inner의 ul길이와 동일하게 - 설정합니다!*/
+    }
+}
+
+/*last_exhibition
+*/
+#last_exhibition {
+    background-color: #fcf9f1;
+    padding-bottom: 130px;
+}
+
+.last_exhibition_inner {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.last_exhibition_inner h1 {
+    padding-top: 113px;
+    padding-bottom: 76px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    display: none;
+}
+
+/*footer*/
+#footer {
+    background-color: #ffe0e7;
+}
+
+.footer_inner {
+    width: 1320px;
+    margin: 0 auto;
+    height: 420px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_left {
+    text-align: left;
+}
+
+.footer_left img {
+    padding-bottom: 37px;
+}
+
+.footer_left p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.footer_right a {
+    display: inline-block;
+    margin-right: 28px;
+    margin-top: 54px;
+}
+
+.footer_right a img {
+    width: 100%;
+}
