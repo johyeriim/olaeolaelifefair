@@ -435,22 +435,20 @@ font-family: 'NanumSquareNeoHeavy';*/
     width: 1320px;
     margin: 0 auto;
     text-align: center;
-}
-
-.video_banner_inner>iframe {
     padding-top: 115px;
     padding-bottom: 50px;
 }
 
+
 .video_banner_inner h1 {
     font-family: 'Jalnan2-Regular';
     font-size: 40px;
-    padding-bottom: 50px;
+    padding: 50px 0;
 }
 
 .video_banner_inner p {
     line-height: 2;
-    padding-bottom: 120px;
+    padding-bottom: 90px;
     font-size: 30px;
 }
 

@@ -193,10 +193,12 @@ font-family: 'NanumSquareNeoHeavy';*/
 /*video_banner*/
 #video_banner {
     margin-top: 146px;
+    overflow: hidden;
 }
 
 #video_banner video {
-    width: 100%;
+    width: 101%;
+    margin-left: -2px;
 }
 
 /*fair*/
