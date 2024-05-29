@@ -192,7 +192,7 @@ font-family: 'NanumSquareNeoHeavy';*/
 
 /*background*/
 #background {
-    background: url(../images/sub1_background_bg.jpg) no-repeat;
+    background: url(../images/sub1_background_bg.jpg) no-repeat center top;
     margin-top: 146px;
     height: 1338px;
 }
@@ -218,6 +218,7 @@ font-family: 'NanumSquareNeoHeavy';*/
     background-image: url(../images/sub1_brandstory_slogan_bg.png), url(../images/sub1_brandstory_oleolelife_bg.png);
     background-repeat: no-repeat, no-repeat;
     background-position: left 778px, right 1720px;
+    overflow: hidden;
 }
 
 .brandstory_inner {
